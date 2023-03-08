@@ -1,65 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>test dialeksis</title>
-		<link rel="stylesheet" href="test%20dialeksis_files/style.css">
-	</head>
 
-	<body style="margin:0px;">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GNews</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-		<!-- MAIN HEADER -->
-		<div style="
-		background-image: url(divbg.jpeg);
-		overflow: hidden;
-		height: 30%;
-		padding: 10%;
-		background-size: cover;
-		background-repeat: no-repeat;
-		box-shadow: 0px -12px 28px 12px;
-		padding-bottom: 2%;
-		padding-top: 2%;
-		margin-left: 0px;
-		margin-right: 0px;
-		margin-bottom: 1%;
-		">
-			<center>
-				<p style="color: white; font-size: 1.2vw;"> 
-					<a href="https://www.youtube.com/watch?v=A4fDEIwuOhk" style=" color: white; font-weight:bold; font-size:150%">RICK ROLL</a> 
-				</p>
-			</center>
-		</div>
-		
-		
-		<!-- PAGE CONTENT -->
-		<table style="width: 100%; min-width: 0;">
-			<tr>
-				<!-- UOC VIDEO -->
-				<th style="width: 65%; border: 1px solid;">
-					<div style="background-size: cover; position: relative;overflow: hidden;width: 100%;padding-top: 56.25%;">
-						<iframe style="position: absolute;top: 0;left: 0;bottom: 0;right: 0;width: 100%;height: 100%;" src="https://www.youtube.com/embed/xRx3GJjdY58" type="audio/mpeg"
-							title="Παρουσίαση Πανεπιστημίου Κρήτης - 2022" 
-							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-							gyroscope; picture-in-picture; web-share" allowfullscreen>
-						</iframe>
-					</div>
-				</th>
-			
-			
-				<!-- MUSIC -->
-				<th>
-					<div style="background-color:white;padding-right: 10%; padding-left: 10%; border-top-width: 20px;margin-top: 0px;">
-						<p style="text-align:center; font-size:2vw;">play some music !</p>
-						<audio controls="controls" src="music.mp3" type="audio/mpeg" style="margin: auto; max-height:100%; max-width:100%; object-fit: fill; width: 100%;"></audio>
-					</div>
-				</th>
+<body>
+  <!-- TOP BAR --> 
+  <div id="topBar">
+    <!-- GOOGLE -->
+    <img src="images/googlenews.png" id="googleImg" />
+    <!-- SEARCH -->
+    <div id="searchContainer">
+      <div id="searchButton">
+        <img src="images/search.png" alt="Search" id="searchImg" />
+      </div>
+      <input type="search" id="searchBox" placeholder="Search" />
+    </div>
+    <!-- AVATAR -->
+    <img src="images/avatar.jpg" id="avatarImg" />
+  </div>
 
-			</tr>
-		</table>
-	
-		
-	</body>
+  <!-- MAIN -->
+  <div id="mainContainer">
+
+    <!-- TOP STORIES - LEFT PART -->
+    <div class="group" id="topStoriesContainer">
+
+      <div class="groupNameDiv">
+        <a href="#" class="category">Κυριότερες Ειδήσεις &gt</a>
+      </div>
+
+      <div class="topStoriesSubcont">
+        <div class="topStoriesItemBig">
+          <img src="images/chatgpt.png" class="imgBig">
+          <img src="images/ert.png" class="sourcelogo">
+          <a class="biglink" href="#">Το φαινόμενο ChatGPT που ξεπέρασε τα 100 εκ. χρήστες σε 2
+            μήνες</a>
+          <p class="datePosted">2 ώρες πριν</p>
+        </div>
+        <div class="topStoriesItemList">
+          <div class="topStoriesItemSmall">
+            <img src="images/protothema.png" class="sourcelogo">
+            <a class="smallLink" href="#">ChatGPT: Πόσο χρήσιμο και ασφαλές είναι για δουλειά στο
+              γραφείο;</a>
+            <p class="datePosted">10 ώρες πριν</p>
+          </div>
+          <div class="topStoriesItemSmall">
+            <img src="images/iefimerida.png" class="sourcelogo">
+            <a class="smallLink" href="#">Θεσσαλονίκη: Το ChatGPT έγραψε εξετάσεις σε μάθημα του ΑΠΘ.
+              Και πήρε 8 στα 10</a>
+            <p class="datePosted">5 ώρες πριν</p>
+          </div>
+          <div class="topStoriesItemSmall">
+            <img src="images/ethnos.png" class="sourcelogo">
+            <a class="smallLink" href="#">ChatGPT: Τι είναι, πώς λειτουργεί και πώς κάνεις εγγραφή. Όσα
+              πρέπει να ξέρετε</a>
+            <p class="datePosted">12 ώρες πριν</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="topStoriesSubcont">
+        <div class="topStoriesItemBig">
+          <img src="images/giannis.jpg" class="imgBig">
+          <img src="images/sport24.png" class="sourcelogo">
+          <a class="biglink" href="#">Μπακς - Μάτζικ 139-117: Αέρινος Αντετοκούνμπο
+            και 16 σερί νίκες για το Μιλγουόκι που έκανε ρεκόρ σεζόν</a>
+          <p class="datePosted">2 ώρες πριν</p>
+        </div>
+        <div class="topStoriesItemList">
+          <div class="topStoriesItemSmall">
+            <img src="images/gazzetta.png" class="sourcelogo">
+            <a class="smallLink" href="#">Το νέο επίτευγμα των Μπακς του Γιάννη Αντετοκούνμπο</a>
+            <p class="datePosted">10 ώρες πριν</p>
+          </div>
+
+          <div class="topStoriesItemSmall">
+            <img src="images/novasports.png" class="sourcelogo">
+            <a class="smallLink" href="#">Μπακς: Με το "16 στα 16" κυνηγούν το... φάντασμα του '71
+              και το άπιαστο ρεκόρ των Λέικερς</a>
+            <p class="datePosted">5 ώρες πριν</p>
+          </div>
+
+          <div class="topStoriesItemSmall">
+            <img src="images/contra.png" class="sourcelogo">
+            <a class="smallLink" href="#">Αντετοκούνμπο: Τα Highlights του Γιάννη απέναντι στους Μάτζικ</a>
+            <p class="datePosted">12 ώρες πριν</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- LOCAL & PICKS - RIGHT PART -->
+    <div id="rightPart">
+
+      <!-- LOCAL NEWS -->
+      <div class="group" class="rightContainer" id="local news">
+
+        <div class="groupNameDiv">
+          <a class="category" href="#">Τοπικές Ειδήσεις &gt</a>
+        </div>
+
+        <div class="rightItem">
+          <div class="rItemText">
+            <img class="sourcelogo" src="images/iefimerida.png">
+            <a class="smallLink" href="#">Στην Κρήτη οι περισσότερες εταιρείες που
+              διαχειρίζονται εκατοντάδες Airbnb
+            </a>
+            <p class="datePosted">2 ώρες πριν</p>
+          </div>
+          <div class="rItemImgDiv">
+            <img src="images/airbnb.jpg" class="rItemImg">
+          </div>
+        </div>
+
+        <div class="rightItem">
+          <div class="rItemText">
+            <img class="sourcelogo" src="images/protothema.png">
+            <a class="smallLink" href="#">Προγραμματισμένες διακοπές ρεύματος για σήμερα στο
+              Ηράκλειο
+            </a>
+            <p class="datePosted">8 ώρες πριν</p>
+          </div>
+          <div class="rItemImgDiv">
+            <img src="images/power-outage.jpg" class="rItemImg">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- PICKS FOR YOU -->
+      <div class="group" class="rightContainer" id="picks for you">
+
+        <div class="groupNameDiv">
+          <a class="category" href="#">Επιλογές για εσάς &gt</a>
+        </div>
+
+        <div class="rightItem">
+          <div class="rItemText">
+            <img class="sourcelogo" src="images/ethnos.png">
+            <a class="smallLink" href="#">Σε υπογραφή για WiFi4GR το καλούνται Nova, Vodafone
+              και OTE
+            </a>
+            <p class="datePosted">3 ώρες πριν</p>
+          </div>
+          <div class="rItemImgDiv">
+            <img src="images/wifi.jpg" class="rItemImg">
+          </div>
+        </div>
+
+        <div class="rightItem">
+          <div class="rItemText">
+            <img class="sourcelogo" src="images/ert.png">
+            <a class="smallLink" href="#">Σε δημοπρασία εκατοντάδες παλαιοί υπολογιστές
+              και μικροσυσκευές της Apple
+            </a>
+            <p class="datePosted">5 ώρες πριν</p>
+          </div>
+          <div class="rItemImgDiv">
+            <img src="images/computer-sale.jpg" class="rItemImg">
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</body>
+
 </html>
